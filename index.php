@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Badwords</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
   // parola verrà cambiata tramite url
   $word = $_GET['badWord'];
   $text = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor maiores sunt molestiae omnis numquam et. Praesentium suscipit impedit inventore quis dolores magni unde dolore, ad mollitia a fuga facilis voluptates.';
-  $censored = str_replace("$word", "***", "$text");
+  $censored = str_ireplace("$word", "***", "$text");
   ?>
   <!-- fine raccolta variabili -->
 
@@ -22,8 +23,8 @@
   </header>
 
   <main>
-    <!-- stampa paragrafo non cencurato -->
-    <div>
+    <!-- stampa paragrafo non censurato -->
+    <div id="normal">
       <!-- titolo  -->
       <h2>
         Paragrafo:
@@ -42,7 +43,7 @@
     </div>
   
     <!-- stampa paragrafo con parola censurata scelta da utente -->
-    <div>
+    <div id="censored">
       <!-- titolo -->
       <h2>
         Paragrafo con censura:
