@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1,
+#normal {
+  margin-bottom: 50px;
+}
+
+#normal h2 {
+  color: #43af85;
+}
+
+#censored h2 {
+  color: #b54423;
+}
+
+h3 {
+  color: #2d3538;
+}
+
+h4 {
+  color: #6f8cff;
+}
